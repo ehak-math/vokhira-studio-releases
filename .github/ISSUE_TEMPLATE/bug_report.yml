@@ -1,0 +1,83 @@
+﻿name: Bug Report
+description: Create a report to help us identify and fix an issue in Vokhira Studio
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please verify that your issue is not already documented in [KNOWN_ISSUES.md](https://github.com/ehak-math/vokhira-studio-releases/blob/main/KNOWN_ISSUES.md).
+
+        ⚠️ **Security Notice**: Never include API keys (e.g. Gemini keys), passwords, personal data, or private media in this report.
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Vokhira Studio Version
+      description: What version of Vokhira Studio are you running? (Found in Help -> About or window title)
+      placeholder: "e.g., 0.4.22"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os-version
+    attributes:
+      label: Windows OS Version
+      description: Select your operating system version
+      options:
+        - "Windows 11 (64-bit)"
+        - "Windows 10 (64-bit, 22H2 or newer)"
+        - "Windows 10 (64-bit, older version)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the behavior
+      placeholder: |
+        1. Open Vokhira Studio
+        2. Import video file 'sample.mp4'
+        3. Click 'Transcribe' using Whisper Small
+        4. See error message...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen
+      placeholder: "Transcription should complete and subtitle clips should appear on the timeline."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: A clear and concise description of what actually happened (include error messages or screenshots)
+      placeholder: "An error dialog appears stating 'Process exited with code 1'..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: sanitized-logs
+    attributes:
+      label: Diagnostic Logs (Sanitized)
+      description: Optional diagnostic log excerpts from `%APPDATA%\Vokhira Studio\logs\`. Please verify all personal paths or secrets are redacted.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have verified this is not a duplicate of an existing issue or listed in KNOWN_ISSUES.md.
+          required: true
+        - label: I have verified that no private API keys, passwords, or confidential media are contained in this report.
+          required: true
