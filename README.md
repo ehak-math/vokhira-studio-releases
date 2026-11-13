@@ -7,7 +7,7 @@
 ### *Give Every Story a Voice.*
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-blue?logo=windows)](https://github.com/ehak-math/vokhira-studio-releases/releases)
-[![Release](https://img.shields.io/badge/Release-v0.4.22--beta-orange)](https://github.com/ehak-math/vokhira-studio-releases/releases)
+[![Release](https://img.shields.io/badge/Release-v0.4.28--beta-orange)](https://github.com/ehak-math/vokhira-studio-releases/releases)
 [![Status](https://img.shields.io/badge/Status-Public%20Beta-yellow)](#beta-notice)
 [![License](https://img.shields.io/badge/License-Proprietary%20%2F%20Third--Party%20Notices-lightgrey)](LICENSE-NOTICES.md)
 
